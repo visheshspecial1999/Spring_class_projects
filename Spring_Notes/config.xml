@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- below we will configure the spring classes and this is setter injection -->
+	<!-- we inserted here primitive type value and used value as a tag  -->
+	<!-- <bean class="com.spring.springframework2022.Student"
+		name="Student1">
+		<property name="studId">
+			<value>121</value>
+		</property>
+		<property name="studName">
+			<value>Mohammed Hamza Masood</value>
+		</property>
+		<property name="studAddress">
+			<value>Uttar Pradesh</value>
+		</property>
+	</bean> -->
+	
+	<!-- without using value tag setter injection -->
+	<!-- <bean class="com.spring.springframework2022.Student" name="Student1">
+		<property name="studId" value="1234"/>
+		<property name="studName" value="Mo Ansari"/>
+		<property name="studAddress" value="Lucknow"/>
+	</bean> -->
+	
+	<!-- without using property tag and by using p schema -->
+	
+	<bean class="com.spring.springframework2022.Student" name="Student1" p:studId="12" p:studName="Azhar Ali" p:studAddress="Pune"/>
+	<bean class="com.spring.springframework2022.Student" name="Student2" p:studId="13" p:studName="Kareem Khan" p:studAddress="Hyderabad"/>
+	
+</beans>
