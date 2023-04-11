@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+   <!--   servlet init method and destroy method -->
+    <bean class="com.jsp.simple_spring_core_student_project_with_xml.Student" id="studentDetails" 
+    init-method="initMethod"  destroy-method="destroyMethod"></bean>
+    
+ <!--   constructor injection with teacher class -->
+  <!-- <bean class="com.jsp.spring_core.constructors.Teacher" id="teacherDetails">
+  <constructor-arg name="id" value="1234"/>
+  <constructor-arg name="name" value="Anmol"/>
+  <constructor-arg name="email" value="Anmol@gmail.com"/>
+  </bean> -->
+  
+ <!--  constructor injection with collage class -->
+ <bean class="com.jsp.sping_core_collage.constructors.collage" id="collageDetails">
+ <constructor-arg name="collageId" value="12345"></constructor-arg>
+  <constructor-arg name="collageName" value="Jspider"></constructor-arg>
+   <constructor-arg name="collagePhone" value="9988776655"></constructor-arg>
+   <constructor-arg name="collageAddress" value="A-26 sec-3 Noida"></constructor-arg>
+ </bean>
+           
+</beans>
