@@ -8,5 +8,4 @@ public class Student {
 	public void destroyMethod() {
 		System.out.println("destroy method called");
 	}
-	
 }

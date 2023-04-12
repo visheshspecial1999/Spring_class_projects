@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
@@ -23,5 +24,19 @@
    <constructor-arg name="collagePhone" value="9988776655"></constructor-arg>
    <constructor-arg name="collageAddress" value="A-26 sec-3 Noida"></constructor-arg>
  </bean>
+ 
+ <!-- setter injection with product class -->
+ <bean class="com.jsp.spring_core_product.setter.Product" id="productDetails">
+ <property name="id" value="2002"></property>
+ <property name="name" value="SAMSUNG"></property>
+ <property name="price" value="13000"></property>
+ </bean>
+ 
+ <!-- object refernce injection with processor and laptop -->
+ <bean class="com.jsp.spring_core_processor.reference.Processor" id="lapProcessor"/>
+  <bean class="com.jsp.spring_core_processor.reference.Laptop" id="myLaptop">
+    <!--    <property name="processor" ref="lapProcessor"></property> -->
+    <constructor-arg name="processor" ref="lapProcessor"></constructor-arg>
+  </bean>
            
 </beans>

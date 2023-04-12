@@ -7,10 +7,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class CollageDriver {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext applicationContext=new ClassPathXmlApplicationContext("NewFile.xml");
-		collage collage=(collage)applicationContext.getBean("collageDetails");
-		collage.collageDisplay();
-		applicationContext.close();
+	ConfigurableApplicationContext applicationContext=new ClassPathXmlApplicationContext("NewFile.xml");
+	collage collage=(collage) applicationContext.getBean("collageDetails");
+	collage.collageDisplay();
+	applicationContext.close();
 
 	}
 }
