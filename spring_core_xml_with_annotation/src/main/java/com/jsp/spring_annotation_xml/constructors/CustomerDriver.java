@@ -11,5 +11,4 @@ public class CustomerDriver {
 		Customer customer = (Customer) applicationContext.getBean("customer");
 		customer.display();
 	}
-
 }
