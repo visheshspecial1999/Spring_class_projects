@@ -15,5 +15,6 @@
 <c:input path="customerEmail" placeholder="customer email"/>
 <input type="submit" value="save">
 </c:form>
+<a href="displayCustomer"  target="blank_"><button>Display</button></a>
 </body>
 </html>

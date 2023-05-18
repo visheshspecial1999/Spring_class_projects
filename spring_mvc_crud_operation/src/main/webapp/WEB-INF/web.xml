@@ -1,19 +1,14 @@
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
 <web-app>
-<!-- <welcome-file-list>
-<welcome-file>register.jsp</welcome-file>
-</welcome-file-list> -->
+<display-name>Archetype Created Web Application</display-name>
 <servlet>
-  <display-name>Archetype Created Web Application</display-name>
-	  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-	  <servlet-name>mvc</servlet-name>
-	  </servlet>
-  <servlet-mapping>
-	  <servlet-name>mvc</servlet-name>
-	  <url-pattern>/</url-pattern>
-  </servlet-mapping>
-</web-app>
-
+<servlet-name>mvc</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>mvc</servlet-name>
+<url-pattern>/</url-pattern>
+</servlet-mapping>
+</web-app> 

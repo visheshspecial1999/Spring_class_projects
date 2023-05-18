@@ -49,22 +49,22 @@ public class CustomerDao {
 	}
 
 	// deleteCustomer method
-	public String deleteCustomer(int customerId) {
+	public void deleteCustomer(int customerId) {
 
 		Customer customer = getById(customerId);
-		if (customer != null) {
+//		if (customer != null) {
 			entityTransaction.begin();
 			entityManager.remove(customer);
 			entityTransaction.commit();
-			return "data deleted";
-		} else {
-			return "customerId not present in database";
-		}
+//			return "data deleted";
+//		} else {
+//			return "customerId not present in database";
+//		}
 	}
 
 	// displayAllCustomer method
 	public List<Customer> displayAllCustomer() {
-		String st = "SELECT c FROM customer c";
+		String st = "SELECT c FROM Customer c";
 		Query query = entityManager.createQuery(st);
 		return query.getResultList();
 	}

@@ -31,8 +31,8 @@ public class CustomerService {
 	}
 
 	// deleteCustomer method
-	public String deleteCustomer(int customerId) {
-		return customerDao.deleteCustomer(customerId);
+	public void deleteCustomer(int customerId) {
+		 customerDao.deleteCustomer(customerId);
 	}
 
 	// displayAllCustomer method
