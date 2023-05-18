@@ -1,12 +1,11 @@
 package com.jsp.one_to_one_bi_direction.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension;
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.jsp.one_to_one_bi_direction.dto.Laptop;
 
-@Component
+@EnableJpaRepositories
 public interface LaptopRepository extends JpaRepository<Laptop,Integer> {
 	
 	Laptop getByLaptopId(int laptopId);
